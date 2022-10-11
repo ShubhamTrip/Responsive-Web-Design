@@ -22,13 +22,15 @@
       </form>
     </div>
     <script>
-       function validate(){
+        let username = document.getElementById('email').value;
+        
+        function validate(){
     let username = document.getElementById('email').value;
     let password = document.getElementById('pass').value;
     
     let flag=0;
 
-    if(username.length<=3){
+    if(username.length<=3 || !username.includes('@gmail.com')){
         document.getElementById('idError').style.visibility='visible';
         flag=1;    
     }
