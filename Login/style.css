@@ -23,6 +23,12 @@ body{
     text-align: center;
     background-color: azure;
     margin: 20px;
+    transition: 400ms;
+}
+.main:hover{
+    height: 36em;
+    width: 31em;
+    box-shadow: 10px 10px 30px;
 }
 .entry{
     padding: 80px;
