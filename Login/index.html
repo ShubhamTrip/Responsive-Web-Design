@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+      <h1>Login</h1>   
+      <form onsubmit='return validate()'>
+        <div class="entry">
+            <input id="email" type="text" placeholder="Enter Email ID"/><br>
+            <p id="idError">Email invalid</p>
+            <input id='pass' type="password" placeholder="Enter Password"/>
+            <p id="passError">Password invalid</p>
+          </div> 
+          <div class="entry">
+            <button id="login-button">Login</button>
+          </div>
+      </form>
+    </div>
+    <script>
+       function validate(){
+    let username = document.getElementById('email').value;
+    let password = document.getElementById('pass').value;
+    
+    let flag=0;
+
+    if(username.length<=3){
+        document.getElementById('idError').style.visibility='visible';
+        flag=1;    
+    }
+    else{
+        document.getElementById('idError').style.visibility='hidden';
+    }
+    if(password.length<=3){
+        document.getElementById('passError').style.visibility='visible';
+        flag=1;
+
+    }
+    else{
+        document.getElementById('passError').style.visibility='hidden';
+    }
+    if(flag==1){
+        return false;
+    }
+   
+    }
+
+    </script>
+</body>
+</html>

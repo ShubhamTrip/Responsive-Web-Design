@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "poppin";
+    src: url('Fonts/Poppins-Light.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+}
+body{
+    background-color: rgb(16, 249, 171);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    height: 35em;
+    padding-top: 20px;
+    width: 30em;
+    font-size: 15px;
+    font-family: 'poppin';
+    text-align: center;
+    background-color: azure;
+    margin: 20px;
+}
+.entry{
+    padding: 80px;
+    padding-top:30px;
+}
+.entry input{
+    padding: 10px;
+    width: 100%;
+    margin-top: 40px;
+    outline-color: blue;
+}
+
+.entry p{
+    text-align: left;
+    color: red;
+    visibility: hidden;
+}
+#login-button{
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border-color: blue;
+    transition: 1s;
+}
+
+#login-button:hover{
+    background-color: rgb(3, 3, 100); 
+    color: white;
+}
