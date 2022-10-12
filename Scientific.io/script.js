@@ -64,8 +64,6 @@ function stopwatch(){
             document.getElementById('minute').innerHTML=strmin;
             document.getElementById('hours').innerHTML=strhr;
         
-        
-        
         setTimeout('stopwatch()',10);
     }
 
